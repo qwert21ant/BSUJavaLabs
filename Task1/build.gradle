@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.qwert21.labs'
+version = '1.0-SNAPSHOT'
+
+tasks.register('run', JavaExec) {
+    classpath sourceSets.main.runtimeClasspath
+    group = 'run'
+    mainClass = 'ru.qwert21.labs.task1.Main'
+}
